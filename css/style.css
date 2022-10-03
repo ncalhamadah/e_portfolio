@@ -6208,4 +6208,33 @@ h6 {
   font-size: 12px;
 }
 
+.wrapper {
+  height: 100vh;
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
+}
+
+.typing-demo {
+	color: #767676;
+  width: 20.5ch;
+  animation: typing 2s steps(22), blink .7s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 3.6em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
 /*# sourceMappingURL=style.css.map */
